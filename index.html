@@ -102,7 +102,7 @@ a.app:hover{border-color:var(--gold);transform:translateY(-2px)}
 a.app:active{transform:scale(.98)}
 .app .go{display:flex;align-items:center;gap:6px;margin-top:12px;font-size:13px;font-weight:600;color:var(--gold)}
 .app .go svg{flex:0 0 auto}
-html:not(.en) .app .go svg{transform:scaleX(-1)}
+html:not(.en) .app .go:not(.dl) svg{transform:scaleX(-1)}
 .skills{margin:0;color:var(--text);font-size:15px;line-height:2.1}
 .skills em{font-style:normal;color:var(--gold);padding-inline:8px}
 footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--hair);text-align:center;color:var(--soft);font-size:13px;display:flex;flex-direction:column;gap:4px}
@@ -168,7 +168,7 @@ footer .f{font-family:var(--en-display);letter-spacing:.3em;color:var(--gold);fo
     <h2 class="lbl"><span class="ar">تطبيقاتي</span><span class="en">MY APPS</span></h2>
     <div class="apps">
       <a class="app" href="https://nabd.sy" target="_blank" rel="noopener"><b><span class="ar">نبض</span><span class="en">Nabd</span></b><span><span class="ar">إدارة العيادات</span><span class="en">Clinic management</span></span><span class="go"><span dir="ltr">nabd.sy</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <div class="app"><b><span class="ar">دورك</span><span class="en">Dorak</span></b><span><span class="ar">نظام للمطاعم</span><span class="en">For restaurants</span></span></div>
+      <a class="app" href="https://mohamedfayzyasenalsabagh-create.github.io/dawrak/dawrak.apk" download><b><span class="ar">دورك</span><span class="en">Dorak</span></b><span><span class="ar">نظام للمطاعم</span><span class="en">For restaurants</span></span><span class="go dl"><span class="ar">تنزيل التطبيق</span><span class="en">Download app</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg></span></a>
     </div>
   </section>
 
