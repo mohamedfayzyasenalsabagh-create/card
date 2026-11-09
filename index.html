@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>محمد فائز الصبّاغ | Mohamed Al-Sabbagh</title>
+<meta name="description" content="مدير إداري ومطوّر تطبيقات — إدارة، مبيعات، وبناء تطبيقات ومتاجر إلكترونية.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="محمد فائز الصبّاغ | Mohamed Al-Sabbagh">
+<meta property="og:description" content="مدير إداري ومطوّر تطبيقات">
+<meta property="og:image" content="https://mohamedfayzyasenalsabagh-create.github.io/card/og.jpg">
+<meta name="theme-color" content="#0C0B09">
+<link rel="icon" href="og.jpg">
+<link rel="apple-touch-icon" href="og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap">
+<style>
+/* One quiet column, black and gold: portrait in a gold ring, name set like an engraved card, hairlines instead of boxes. */
+:root{
+  --ink:#0C0B09; --panel:#14120F; --panel-2:#1B1814; --hair:rgba(200,165,90,.22);
+  --text:#F3EEE3; --soft:#B8AE9C; --gold:#C8A55A; --gold-hi:#EAD39A; --gold-lo:#9C7A36;
+  --ar-display:'Amiri','Times New Roman',serif;
+  --ar-body:'IBM Plex Sans Arabic',Tahoma,'Segoe UI',sans-serif;
+  --en-display:'Cormorant Garamond','Times New Roman',serif;
+  --en-body:'Manrope','Segoe UI',Arial,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--ink)}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--ar-body);font-size:16px;line-height:1.75;
+  background:
+    radial-gradient(120% 60% at 50% -10%, rgba(200,165,90,.16), transparent 60%),
+    var(--ink);
+  padding:env(safe-area-inset-top,0px) max(18px,env(safe-area-inset-right,0px)) calc(40px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));
+  -webkit-font-smoothing:antialiased}
+html.en body{font-family:var(--en-body)}
+html.en .ar, html:not(.en) .en{display:none!important}
+.wrap{max-width:460px;margin:0 auto}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;padding-block:16px 4px}
+.mono{font-family:var(--en-display);font-size:15px;letter-spacing:.32em;color:var(--gold);font-weight:600}
+.lang{min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--hair);background:transparent;color:var(--soft);font:500 13px var(--en-body);letter-spacing:.06em;cursor:pointer;transition:color .3s var(--ease),border-color .3s var(--ease)}
+.lang:hover{color:var(--gold-hi);border-color:var(--gold)}
+
+/* hero */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:28px}
+.ring{position:relative;width:176px;height:176px;border-radius:50%;padding:4px;
+  background:conic-gradient(from 210deg,var(--gold-lo),var(--gold-hi),var(--gold),var(--gold-lo),var(--gold-hi),var(--gold-lo));}
+.ring::after{content:"";position:absolute;inset:-12px;border-radius:50%;border:1px solid var(--hair)}
+.ring img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 30%;border:4px solid var(--ink);background:var(--panel)}
+.orn{display:flex;align-items:center;gap:12px;margin-top:30px;color:var(--gold)}
+.orn i{display:block;width:44px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn i:last-child{transform:scaleX(-1)}
+h1{margin:14px 0 0;font-family:var(--ar-display);font-weight:700;font-size:clamp(34px,10vw,44px);line-height:1.25;text-wrap:balance;
+  background:linear-gradient(180deg,var(--gold-hi) 0%,var(--gold) 55%,var(--gold-lo) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+html.en h1{font-family:var(--en-display);font-weight:600;letter-spacing:.01em;font-size:clamp(34px,10vw,42px);line-height:1.15}
+.alt{margin:6px 0 0;font-family:var(--en-display);font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+html.en .alt{font-family:var(--ar-display);letter-spacing:0;text-transform:none;font-size:19px}
+.role{margin:16px 0 0;font-size:16px;font-weight:500;color:var(--text);letter-spacing:.01em}
+html.en .role{font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+
+/* actions */
+.acts{display:flex;justify-content:center;gap:18px;margin-top:30px}
+.ic{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;color:var(--soft);font-size:13px}
+.ic span.o{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--hair);background:var(--panel);color:var(--gold-hi);
+  transition:transform .35s var(--ease),border-color .35s var(--ease),background .35s var(--ease)}
+.ic:hover span.o{border-color:var(--gold);background:var(--panel-2);transform:translateY(-2px)}
+.ic:active span.o{transform:scale(.94)}
+.cta{display:flex;flex-direction:column;gap:10px;margin-top:28px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:14px;font:600 16px inherit;font-family:inherit;text-decoration:none;cursor:pointer;
+  transition:transform .3s var(--ease),filter .3s var(--ease),border-color .3s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn.gold{border:0;color:#1A140A;background:linear-gradient(135deg,var(--gold-hi),var(--gold) 45%,var(--gold-lo));box-shadow:0 10px 30px -12px rgba(200,165,90,.55)}
+.btn.gold:hover{filter:brightness(1.06)}
+.btn.line{background:transparent;color:var(--text);border:1px solid var(--hair)}
+.btn.line:hover{border-color:var(--gold)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold-hi);outline-offset:4px}
+
+/* sections */
+section{margin-top:44px}
+.lbl{display:flex;align-items:center;gap:14px;margin:0 0 18px;font-size:13px;font-weight:600;letter-spacing:.18em;color:var(--gold)}
+html:not(.en) .lbl{letter-spacing:.02em;font-size:15px}
+.lbl::after{content:"";flex:1;height:1px;background:var(--hair)}
+.about{margin:0;color:var(--soft);font-size:16px;font-weight:300;max-width:62ch}
+html:not(.en) .about{font-size:17px}
+.exp{list-style:none;margin:0;padding:0}
+.exp li{position:relative;padding-block:14px;padding-inline-start:26px;border-bottom:1px solid var(--hair)}
+.exp li:last-child{border-bottom:0}
+.exp li::before{content:"";position:absolute;inset-inline-start:2px;top:24px;width:7px;height:7px;transform:rotate(45deg);background:var(--gold)}
+.exp b{display:block;font-weight:500;font-size:16px;color:var(--text)}
+.exp small{display:block;color:var(--soft);font-size:14px;margin-top:2px}
+.apps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.app{position:relative;padding:20px 18px;border-radius:16px;background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--hair);overflow:hidden;min-width:0}
+.app b{display:block;font-family:var(--ar-display);font-size:28px;line-height:1.2;color:var(--gold-hi)}
+html.en .app b{font-family:var(--en-display);font-size:26px}
+.app span{color:var(--soft);font-size:14px}
+.skills{margin:0;color:var(--text);font-size:15px;line-height:2.1}
+.skills em{font-style:normal;color:var(--gold);padding-inline:8px}
+footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--hair);text-align:center;color:var(--soft);font-size:13px;display:flex;flex-direction:column;gap:4px}
+footer .f{font-family:var(--en-display);letter-spacing:.3em;color:var(--gold);font-size:13px}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  background:var(--panel-2);border:1px solid var(--gold);color:var(--text);padding:10px 18px;border-radius:999px;font-size:14px;transition:all .4s var(--ease)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* entrance */
+@media (prefers-reduced-motion:no-preference){
+  .rv{animation:rise .9s var(--ease) both;animation-delay:calc(var(--i,0) * 90ms)}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .ring{animation:rise .9s var(--ease) both, glow 6s ease-in-out 1s infinite}
+  @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(200,165,90,0)}50%{box-shadow:0 0 40px 2px rgba(200,165,90,.22)}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar rv">
+    <span class="mono">M · S</span>
+    <button class="lang" id="lang" type="button" aria-label="Switch language / تبديل اللغة"><span class="ar">English</span><span class="en">العربية</span></button>
+  </div>
+
+  <header class="hero">
+    <div class="ring"><img src="photo.jpg" width="168" height="168" alt="محمد فائز الصبّاغ"></div>
+    <div class="orn rv" style="--i:1" aria-hidden="true"><i></i><svg width="10" height="10" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5z" fill="currentColor"/></svg><i></i></div>
+    <h1 class="rv" style="--i:2"><span class="ar">محمد فائز الصبّاغ</span><span class="en">Mohamed Fayez Al-Sabbagh</span></h1>
+    <p class="alt rv" style="--i:3"><span class="ar" lang="en" dir="ltr">Mohamed Al-Sabbagh</span><span class="en" lang="ar" dir="rtl">محمد فائز الصبّاغ</span></p>
+    <p class="role rv" style="--i:4"><span class="ar">مدير إداري · مطوّر تطبيقات</span><span class="en">Business Manager · App Developer</span></p>
+
+    <nav class="acts rv" style="--i:5" aria-label="Contact">
+      <a class="ic" href="tel:+963986411114"><span class="o"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="ar">اتصال</span><span class="en">Call</span></a>
+      <a class="ic" href="https://wa.me/963986411114" target="_blank" rel="noopener"><span class="o"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></span><span class="ar">واتساب</span><span class="en">WhatsApp</span></a>
+      <a class="ic" href="mailto:mohamedfayzyasenalsabagh@gmail.com"><span class="o"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m21.5 6.5-9.5 6.5-9.5-6.5"/></svg></span><span class="ar">إيميل</span><span class="en">Email</span></a>
+    </nav>
+
+    <div class="cta rv" style="--i:6;width:100%">
+      <a class="btn gold" href="contact.vcf" download="Mohamed-Al-Sabbagh.vcf"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg><span class="ar">حفظ جهة الاتصال</span><span class="en">Save Contact</span></a>
+      <button class="btn line" id="share" type="button"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span class="ar">مشاركة البطاقة</span><span class="en">Share Card</span></button>
+    </div>
+  </header>
+
+  <section class="rv" style="--i:7">
+    <h2 class="lbl"><span class="ar">نبذة</span><span class="en">ABOUT</span></h2>
+    <p class="about ar">مدير إداري بخبرة في الإدارة والمبيعات والمحاسبة وتأسيس المشاريع، ومؤسس ومبرمج تطبيقَي «نبض» لإدارة العيادات و«دورك» للمطاعم. أبني التطبيقات بالاستعانة بالذكاء الاصطناعي، ولدي خبرة في العمل التطوعي والمبادرات المجتمعية.</p>
+    <p class="about en">Business manager experienced in administration, sales, accounting and launching new ventures. Founder and developer of Nabd, a clinic management app, and Dorak for restaurants. I build apps with the help of AI, backed by volunteer work on community initiatives.</p>
+  </section>
+
+  <section>
+    <h2 class="lbl"><span class="ar">الخبرات</span><span class="en">EXPERIENCE</span></h2>
+    <ul class="exp">
+      <li><b><span class="ar">مؤسس ومدير</span><span class="en">Founder &amp; Manager</span></b><small><span class="ar">مستودع مستلزمات وتجهيز عيادات الأسنان</span><span class="en">Dental supplies &amp; clinic fit-out</span></small></li>
+      <li><b><span class="ar">مدير مبيعات</span><span class="en">Sales Manager</span></b></li>
+      <li><b><span class="ar">مسؤول مبيعات</span><span class="en">Sales Officer</span></b></li>
+      <li><b><span class="ar">مدير إداري</span><span class="en">Administrative Manager</span></b><small><span class="ar">مقاولات وألمنيوم · أربيل</span><span class="en">Contracting &amp; aluminium · Erbil</span></small></li>
+      <li><b><span class="ar">مدير محاسبين</span><span class="en">Head of Accounting</span></b><small><span class="ar">قطاع المطاعم · دمشق</span><span class="en">Restaurant sector · Damascus</span></small></li>
+      <li><b><span class="ar">متطوع</span><span class="en">Volunteer</span></b><small><span class="ar">مبادرات مجتمعية</span><span class="en">Community initiatives</span></small></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="lbl"><span class="ar">تطبيقاتي</span><span class="en">MY APPS</span></h2>
+    <div class="apps">
+      <div class="app"><b><span class="ar">نبض</span><span class="en">Nabd</span></b><span><span class="ar">إدارة العيادات</span><span class="en">Clinic management</span></span></div>
+      <div class="app"><b><span class="ar">دورك</span><span class="en">Dorak</span></b><span><span class="ar">نظام للمطاعم</span><span class="en">For restaurants</span></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="lbl"><span class="ar">المهارات</span><span class="en">SKILLS</span></h2>
+    <p class="skills ar">الإدارة والمبيعات<em>◆</em>بناء التطبيقات بالذكاء الاصطناعي<em>◆</em>برمجة المتاجر الإلكترونية<em>◆</em>برنامج الأمين للمحاسبة<em>◆</em>ICDL<em>◆</em>العربية والإنجليزية</p>
+    <p class="skills en">Management &amp; Sales<em>◆</em>AI-assisted app building<em>◆</em>E-commerce development<em>◆</em>Al-Ameen Accounting<em>◆</em>ICDL<em>◆</em>Arabic &amp; English</p>
+  </section>
+
+  <footer>
+    <span class="f">M · S</span>
+    <span><span dir="ltr">+963 986 411 114</span></span>
+    <span dir="ltr">mohamedfayzyasenalsabagh@gmail.com</span>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){root.classList.toggle('en',l==='en');root.lang=l;root.dir=l==='en'?'ltr':'rtl';try{localStorage.setItem('lang',l)}catch(e){}}
+  try{if(localStorage.getItem('lang')==='en')setLang('en')}catch(e){}
+  document.getElementById('lang').addEventListener('click',function(){setLang(root.classList.contains('en')?'ar':'en')});
+  var t=document.getElementById('toast'),tm;
+  function toast(m){t.textContent=m;t.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('on')},2000)}
+  document.getElementById('share').addEventListener('click',function(){
+    var en=root.classList.contains('en'),url=location.href.split('#')[0];
+    var data={title:en?'Mohamed Al-Sabbagh':'محمد فائز الصبّاغ',text:en?'Business card':'بطاقة أعمال',url:url};
+    if(navigator.share){navigator.share(data).catch(function(){});return}
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){toast(en?'Link copied':'تم نسخ الرابط')},function(){toast(url)})}else{toast(url)}
+  });
+})();
+</script>
+</body>
+</html>
